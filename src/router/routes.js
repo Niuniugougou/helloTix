@@ -73,6 +73,21 @@ const frameIn = [
         meta: { title: '图片类型' }
       },
       {
+        path: '/admin/progressBar',
+        component: resolve => require(['../components/webs/progressBar/progressBar.vue'], resolve),
+        meta: { title: '不一样的进度条' }
+      },
+      {
+        path: '/admin/editTable',
+        component: resolve => require(['../components/webs/editTable/editTable.vue'], resolve),
+        meta: { title: '可编辑table' }
+      },
+      {
+        path: '/admin/editTree',
+        component: resolve => require(['../components/webs/editTree/editTree.vue'], resolve),
+        meta: { title: '可编辑Tree' }
+      },
+      {
           path: '/404',
           component: resolve => require(['../components/page/404.vue'], resolve),
           meta: { title: '404' }
