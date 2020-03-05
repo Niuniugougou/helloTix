@@ -2,7 +2,7 @@
   <d2-container>
     <el-button @click="open">打开</el-button>
     <el-dialog
-      title="监测类型设置"
+      title="表格内嵌套输入框"
       :visible.sync="editTableDis"
       v-if="editTableDis"
       width="60%"
@@ -37,11 +37,19 @@
         <el-button type="primary" @click="saveTableData">保 存</el-button>
       </span>
     </el-dialog>
+    <editTable2></editTable2>
+    <editTable3></editTable3>
   </d2-container>
 </template>
 
 <script>
+import editTable2 from '@/components/webs/editTable/editTable2'
+import editTable3 from '@/components/webs/editTable/editTable3'
 export default {
+  components: {
+    editTable2,
+    editTable3
+  },
   data() {
     return {
       editTableDis: false,
