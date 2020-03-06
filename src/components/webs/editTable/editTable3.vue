@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>编辑一行。</h3>
+    <h3>3.编辑一行。</h3>
     <el-table
       ref="multipleTable"
       :data="tableData"
@@ -12,12 +12,12 @@
       @selection-change="handleSelectionChange"
     >
       <el-table-column type="selection" width="55"></el-table-column>
-      <el-table-column class="td-th" label="行政区划" width="120">
+      <el-table-column class="td-th" label="时间" width="120">
         <template slot-scope="scope">
           <el-input v-model="scope.row.date" :disabled="isEditObj[scope.$index].a"></el-input>
         </template>
       </el-table-column>
-      <el-table-column label="问题类型">
+      <el-table-column label="问题">
         <template slot-scope="scope">
           <el-input v-model="scope.row.name" :disabled="isEditObj[scope.$index].a"></el-input>
         </template>

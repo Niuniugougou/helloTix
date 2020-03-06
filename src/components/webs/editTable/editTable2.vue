@@ -1,10 +1,10 @@
 <template>
   <div>
-    <h3>使用替换的方式编辑一格。</h3>
+    <h3>2.使用替换的方式编辑一格。</h3>
     <el-table :data="tableData" highlight-current-row border :height="tableHeight">
       <el-table-column
         prop="info.name"
-        label="通道名称"
+        label="名称"
         align="center"
         class="compileNameFather"
         width="230"
@@ -19,17 +19,17 @@
           </div>
         </template>
       </el-table-column>
-      <el-table-column prop="number" label="实时人数" align="center"></el-table-column>
+      <el-table-column prop="number" label="数量" align="center"></el-table-column>
       <el-table-column prop="lastAnalyze" label="时间" align="center"></el-table-column>
-      <el-table-column label="人员白名单" align="center">
+      <el-table-column label="白名单" align="center">
         <template slot-scope="scope">
           <el-button @click="handleClick(scope.row)" type="text" size="small">查看</el-button>
         </template>
       </el-table-column>
       <el-table-column prop="status" label="状态" align="center">
         <template slot-scope="scope">
-          <span v-if="scope.row.info.name">在线</span>
-          <span v-else class="colorStatus">预备</span>
+          <span v-if="scope.row.info.name">启用</span>
+          <span v-else class="colorStatus">停用</span>
         </template>
       </el-table-column>
     </el-table>
@@ -79,6 +79,7 @@ export default {
       cellInputSon.style.width = "60%";
       cellInputSon.style.padding = "0 5px 0 0";
       cellInputSon.style.border = "1px solid transparent";
+      cellInputSon.style.marginRight = "6px";
       this.clickButSty = true;
       cellInput.appendChild(cellInputSon);
       cellabc.appendChild(cellInput);
