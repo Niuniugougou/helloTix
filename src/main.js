@@ -48,6 +48,12 @@ import './directives.js'
 import axios from 'axios';
 Vue.prototype.$http = axios;
 
+//多功能表格插件
+import 'xe-utils'
+import VXETable from 'vxe-table'
+import 'vxe-table/lib/index.css'
+Vue.use(VXETable)
+
 new Vue({
   router,
   store,

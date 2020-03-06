@@ -40,7 +40,8 @@
     "vue-quill-editor": "^3.0.6",
     "vue-router": "^3.0.3",
     "vue-schart": "^1.0.0",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "xe-ajax": "^4.0.3"
   },
   "devDependencies": {
     "@kazupon/vue-i18n-loader": "^0.3.0",
