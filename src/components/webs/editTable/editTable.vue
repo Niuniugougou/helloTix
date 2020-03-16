@@ -10,8 +10,8 @@
     <el-divider></el-divider>
     <editTable5></editTable5>
     <el-divider></el-divider>
-    <!-- <editTable6></editTable6>
-    <el-divider></el-divider> -->
+    <!-- <editTable6></editTable6> -->
+    <el-divider></el-divider>
   </d2-container>
 </template>
 
