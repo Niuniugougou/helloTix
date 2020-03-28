@@ -88,6 +88,11 @@ const frameIn = [
         meta: { title: '可编辑Tree' }
       },
       {
+        path: '/admin/process',
+        component: resolve => require(['../components/webs/process/process.vue'], resolve),
+        meta: { title: '可拖拽流程图' }
+      },
+      {
           path: '/404',
           component: resolve => require(['../components/page/404.vue'], resolve),
           meta: { title: '404' }

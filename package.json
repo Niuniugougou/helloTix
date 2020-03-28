@@ -12,6 +12,8 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "@antv/g6": "^3.1.3",
+    "@antv/util": "~1.3.1",
     "axios": "^0.18.0",
     "better-scroll": "^1.15.2",
     "core-js": "^2.6.5",
@@ -43,6 +45,7 @@
     "vuex": "^3.0.1"
   },
   "devDependencies": {
+    "numericjs": "^1.2.6",
     "@kazupon/vue-i18n-loader": "^0.3.0",
     "@vue/cli-plugin-babel": "^3.6.0",
     "@vue/cli-plugin-eslint": "^3.6.0",
