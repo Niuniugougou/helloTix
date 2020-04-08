@@ -21,6 +21,8 @@ import { GetMenus } from '@/api/allactions'
 import EleMultiCascader from "ele-multi-cascader"
 Vue.use(EleMultiCascader);
 
+import VCharts from 'v-charts'
+Vue.use(VCharts)
 //工作台折线图
 import VeLine from 'v-charts/lib/line.common.js'
 Vue.component(VeLine.name, VeLine)

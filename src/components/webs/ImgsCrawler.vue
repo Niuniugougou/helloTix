@@ -1,7 +1,6 @@
 <template>
   <d2-container class="table">
-    图片
-
+    图片方式因某种原因暂不提供演示。
   </d2-container>
 </template>
 

@@ -15,13 +15,30 @@
       </el-col>
     </el-row>
     <el-row :gutter="20" class="main_top"></el-row>
+    <div>
+      <chartLine></chartLine>
+    </div>
+    <div>
+      <chartScatter></chartScatter>
+    </div>
+    <div>
+      <chartPie></chartPie>
+    </div>
   </d2-container>
 </template>
 
 <script>
+import chartLine from "@/components/v-chart/chartsLine.vue"
+import chartScatter from "@/components/v-chart/chartScatter.vue"
+import chartPie from "@/components/v-chart/chartPie.vue"
 import { dashboard } from "@/api/allactions";
 export default {
   name: "dashboard",
+  components: {
+    chartLine,
+    chartScatter,
+    chartPie
+  },
   data() {
     this.chartSettings = {
       xAxisType: "time",
@@ -62,8 +79,7 @@ export default {
       return this.marqueeList.length > 0 ? false : true;
     }
   },
-  methods: {  },
-  components: {}
+  methods: {  }
 };
 </script>
 <style scoped>
