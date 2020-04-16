@@ -15,7 +15,7 @@ export default {
         //获取数据列表
         async getDataListAsync(context, {that}) {
             const {pageSize, pageNum, searchName} = context.state;
-            const data = {pageSize, pageNum, searchName}
+            const data = {pageSize, pageNum, searchName};
             let res = await articleManage.getAllArticle(data);
             if (res.code != 200) { return that.$message.error(res.msg)};
             res.dataList.map(item => {
@@ -25,12 +25,7 @@ export default {
                     item.state = '未启用'
                 }
             })
-            let dataType = {
-                pageSize: 50,
-                pageNum: 1,
-                searchName: ''
-            }
-            let resType = await articleTypeManage.getAllArticleType(dataType);
+            let resType = await articleTypeManage.getAllArticleType(data);
             if (resType.code != 200) { return this.$message.error(resType.msg);}
             //类型过滤，由数字 => 汉字
             res.dataList.map(item => {

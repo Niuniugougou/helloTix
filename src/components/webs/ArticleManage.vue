@@ -159,7 +159,7 @@ export default {
     handleCurrentChange(val) {
       this.currentChange(val);
       this.getDataListAsync({ that: this });
-    }
+    },
   }
 };
 </script>

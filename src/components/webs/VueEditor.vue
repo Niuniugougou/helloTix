@@ -161,7 +161,7 @@ export default {
       this.type_option = [];
       res.dataList.map(item => {
         if(item.state == '0') {
-          this.type_option.push({value:item.id,label:item.type_name})
+          this.type_option.push({value:item.id.toString(),label:item.type_name})
         }
       })
     },
