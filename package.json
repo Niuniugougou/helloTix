@@ -14,7 +14,7 @@
   "dependencies": {
     "@antv/g6": "~3.1.3",
     "@antv/util": "~1.3.1",
-    "axios": "~0.18.0",
+    "axios": "~0.21.1",
     "babel-preset-es2015": "^6.24.1",
     "better-scroll": "~1.15.2",
     "core-js": "~2.6.5",
